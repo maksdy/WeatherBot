@@ -1,5 +1,5 @@
-source 'http://rubygems.org'
+# frozen_string_literal: true
+source "https://rubygems.org"
 
-gem "rspec"
-gem 'telegram-bot'
-gem 'forecast_io'
+gem "forecast_io"
+gem 'telegram-bot-ruby'

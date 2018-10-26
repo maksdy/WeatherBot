@@ -7,7 +7,7 @@ Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
     case message.text
     when '/start'
-      bot.api.sendMessage(chat_id: message.chat.id, text: "Привет! Погода в Киеве сейчас: #{forecast.hourly.summary}")
+      bot.api.sendMessage(chat_id: message.chat.id, text: "Привет! Погода в Киеве сейчас: #{forecast.hourly.summary}. Температура воздуха: #{forecast.currently.temperature}'C.Чтобы повторить запрос нажми /start")
     end
 end
 end
